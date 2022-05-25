@@ -9,15 +9,16 @@ chinese speech pretrained models
 
 下游 ASR 任务训练中，使用 WenetSpeech train_s 100h 数据集作为有监督数据进行训练，分别对比了使用 FBank 特征、wav2vec 2.0 模型特征和 HuBERT 模型特征的字错误率 (Character Error Rate, CER) 结果。同时，额外对比了使用 train_m 集 1000h 和 train_l 集 1wh 中文数据 FBank 特征训练的模型结果。具体实验结果见下表：
 
-| 输入特征           | 训练数据 | Dev 集 | Test_Net 集 | Test_Meeting 集 |
-| ---                | ---      | ---    | ---         | ---             |
-| FBank (Conformer)  | 100h     | 17.4   | 22.6        | 32.7            |
-| FBANK (Conformer)  | 1000h    | 11.6   | 14.6        | 22.4            |
-| FBANK (Conformer)  | 1wh      | 9.7    | 8.9         | 15.9            |
-| wav2vec 2.0 BASE   | 100h     | 13.1   | 16.1        | 25.5            |
-| wav2vec 2.0 LARGE  | 100h     | 11.7   | 13.8        | 25.5            |
-| HuBERT BASE        | 100h     | 12.6   | 14.7        | 21.3            |
-| HuBERT LARGE       | 100h     | 10.0   | 10.2        | 14.5            |
+
+| 输入特征          | 训练数据 | Dev 集 | Test_Net 集 | Test_Meeting 集 |
+| ---               | ---      | ---    | ---         | ---             |
+| FBank             | 100h     | 17.4   | 22.6        | 32.7            |
+| FBank             | 1000h    | 11.6   | 14.6        | 22.4            |
+| FBank             | 1wh      | 9.7    | 8.9         | 15.9            |
+| wav2vec 2.0 BASE  | 100h     | 13.1   | 16.1        | 25.5            |
+| wav2vec 2.0 LARGE | 100h     | 11.7   | 13.8        | 25.5            |
+| HuBERT BASE       | 100h     | 12.6   | 14.7        | 21.3            |
+| HuBERT LARGE      | 100h     | 10.0   | 10.2        | 14.5            |
 
 
 ## 参考文献
