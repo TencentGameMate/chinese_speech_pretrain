@@ -8,10 +8,10 @@ chinese speech pretrained models
 
 | 模型                   | 预训练数据          | 微云下载                                                 | huggingface模型库下载 |
 | ---------------------- | ------------------- | -------------------------------------------------------- | --------------------- |
-| chinese-wav2vec2-base  | WenetSpeech train L | [chinese-wav2vec2-base](https://share.weiyun.com/iD7VYJBG)  |                       |
-| chinese-wav2vec2-large | WenetSpeech train L | [chinese-wav2vec2-large](https://share.weiyun.com/w8aTvL22) |                       |
-| chinese-hubert-base    | WenetSpeech train L |                                                          |                       |
-| chinese-hubert-large   | WenetSpeech train L |                                                          |                       |
+| chinese-wav2vec2-base  | WenetSpeech train L | TBD                                                      | TBD                   |
+| chinese-wav2vec2-large | WenetSpeech train L | TBD                                                      | TBD                   |
+| chinese-hubert-base    | WenetSpeech train L | TBD                                                      | TBD                   |
+| chinese-hubert-large   | WenetSpeech train L | TBD                                                      | TBD                   |
 
 ### WenetSpeech 实验结果
 
