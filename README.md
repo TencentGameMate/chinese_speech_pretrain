@@ -7,10 +7,10 @@
 
 | 模型                   | 预训练数据          | fairseq模型下载                                                                    | huggingface模型下载 |
 | ---------------------- | ------------------- | ---------------------------------------------------------------------------------- | ------------------- |
-| chinese-wav2vec2-base  | WenetSpeech train L | [chinese-wav2vec2-base](https://pan.baidu.com/s/1TwlSNDmihs_mjjPpNLhzoA) 提取码: d2hq | TBD                 |
-| chinese-wav2vec2-large | WenetSpeech train L | [chinese-wav2vec2-large](https://pan.baidu.com/s/1WbAv3PUqRWmHwwp6GsmLnw) 提取码: 7p8r | TBD                 |
-| chinese-hubert-base    | WenetSpeech train L | [chinese-hubert-base](https://pan.baidu.com/s/1F3i1u27szmLtBnbMufEv0w) 提取码: xjiy | TBD                 |
-| chinese-hubert-large   | WenetSpeech train L | [chinese-hubert-large](https://pan.baidu.com/s/1ReagTulgkESGpGJhB5DWRQ) 提取码: hhn7 | TBD                 |
+| chinese-wav2vec2-base  | WenetSpeech train L | [chinese-wav2vec2-base](https://pan.baidu.com/s/1TwlSNDmihs_mjjPpNLhzoA) 提取码: d2hq |  [chinese-wav2vec2-base](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base)  |
+| chinese-wav2vec2-large | WenetSpeech train L | [chinese-wav2vec2-large](https://pan.baidu.com/s/1WbAv3PUqRWmHwwp6GsmLnw) 提取码: 7p8r | [chinese-wav2vec2-large](https://huggingface.co/TencentGameMate/chinese-wav2vec2-large)  |
+| chinese-hubert-base    | WenetSpeech train L | [chinese-hubert-base](https://pan.baidu.com/s/1F3i1u27szmLtBnbMufEv0w) 提取码: xjiy | [chinese-hubert-base](https://huggingface.co/TencentGameMate/chinese-hubert-base)  |
+| chinese-hubert-large   | WenetSpeech train L | [chinese-hubert-large](https://pan.baidu.com/s/1ReagTulgkESGpGJhB5DWRQ) 提取码: hhn7 | [chinese-hubert-large](https://huggingface.co/TencentGameMate/chinese-hubert-large)  |
 
 ## 下游任务：中文语音识别
 
