@@ -1,17 +1,18 @@
 # chinese_speech_pretrain
 
-chinese speech pretrained models
-
-## 下游任务：中文语音识别
+中文语音预训练模型，使用 Fairseq 工具包[5]训练
+我们使用 WenetSpeech [4] train_l 集的 1 万小时中文数据作为无监督预训练数据。数据主要来源于 YouTube 和 Podcast，覆盖了各种类型录制场景、背景噪声、说话方式等，其领域主要包括有声书、解说、纪录片、电视剧、访谈、新闻、朗读、演讲、综艺和其他等10大场景。我们基于 Fairseq 工具包 [6] 分别训练了 wav2vec 2.0 和 HuBERT 模型，遵循 [1，2] 的模型配置，每个预训练模型模型包括 BASE 和 LARGE 两种大小。对于 BASE 模型，我们使用 8 张 A100 显卡，梯度累计为 8，模拟 64 张显卡进行训练。对于 LARGE 模型，我们使用 16 张 A100 显卡，梯度累计为 8，模拟 128 张显卡进行训练。
 
 ### 模型下载
 
-| 模型                   | 预训练数据          | 微云下载                                                 | huggingface模型库下载 |
-| ---------------------- | ------------------- | -------------------------------------------------------- | --------------------- |
-| chinese-wav2vec2-base  | WenetSpeech train L | TBD                                                      | TBD                   |
-| chinese-wav2vec2-large | WenetSpeech train L | TBD                                                      | TBD                   |
-| chinese-hubert-base    | WenetSpeech train L | TBD                                                      | TBD                   |
-| chinese-hubert-large   | WenetSpeech train L | TBD                                                      | TBD                   |
+| 模型                   | 预训练数据          | fairseq模型下载                                                                    | huggingface模型下载 |
+| ---------------------- | ------------------- | ---------------------------------------------------------------------------------- | ------------------- |
+| chinese-wav2vec2-base  | WenetSpeech train L | [chinese-wav2vec2-base](https://pan.baidu.com/s/1TwlSNDmihs_mjjPpNLhzoA) 提取码: d2hq | TBD                 |
+| chinese-wav2vec2-large | WenetSpeech train L | [chinese-wav2vec2-large](https://pan.baidu.com/s/1WbAv3PUqRWmHwwp6GsmLnw) 提取码: 7p8r | TBD                 |
+| chinese-hubert-base    | WenetSpeech train L | [chinese-hubert-base](https://pan.baidu.com/s/1F3i1u27szmLtBnbMufEv0w) 提取码: xjiy | TBD                 |
+| chinese-hubert-large   | WenetSpeech train L | [chinese-hubert-large](https://pan.baidu.com/s/1ReagTulgkESGpGJhB5DWRQ) 提取码: d2hq | TBD                 |
+
+## 下游任务：中文语音识别
 
 ### WenetSpeech 实验结果
 
