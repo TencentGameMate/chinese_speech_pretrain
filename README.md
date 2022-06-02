@@ -41,6 +41,28 @@
 | HuBERT BASE       | 100h     | 12.6   | 14.7        | 21.3            |
 | HuBERT LARGE      | 100h     | 10.0   | 10.2        | 14.5            |
 
+
+
+
+
+
+
+更多语音下游任务实验结果请关注 GitHub 链接（https://github.com/TencentGameMate/chinese_speech_pretrain）。欢迎大家使用我们提供的中文语音预训练模型开展研究工作，一起探索语音预训练模型在中文和相关众多场景下的应用。
+
+<p align="center">
+    <br>
+    <img src="./figs/tencent.png" width="300"/><img src="./figs/zhijiyouxi.png" width="300"/>
+    <br>
+</p>
+
+<p align="center">
+    <br>
+    <img src="./figs/npu@aslp.jpeg" width="500"/><img src="./figs/npu_wechat.jpeg" width="200"/>
+    <br>
+</p>
+
+
+
 ## 参考文献
 
 [1] Binbin Zhang, Hang Lv, Pengcheng Guo, Qijie Shao, Chao Yang, Lei Xie, Xin Xu, Hui Bu, Xiaoyu Chen, Chenhen Zeng, Di Wu, and Zhendong Peng, "WenetSpeech: A 10000+ hours multi-domain Mandarin corpus for speech recognition," in Proc. ICASSP, 2021
