@@ -14,6 +14,18 @@
 
 ## 下游任务：中文语音识别
 
+### Aishell 数据集 实验结果
+我们使用 Aishell 178 小时训练集作为有监督数据进行训练，分别对比了使用 FBank 特征、wav2vec 2.0 BASE/LARGE 模型特征和 HuBERT BASE/LARGE 模型特征的字错误率 (Character Error Rate, CER) 结果。同时，我们额外对比了使用 WenetSpeech train_l 集 1 万小时中文数据进行训练时，其在 Aishell 测试集上的效果。训练数据使用了变速（0.9、1.0、1.1 倍）和 SpecAugment 数据增广技术，解码方式为 beam search，使用了基于 Transformer 的语言模型进行 rescoring。具体实验结果见下表：
+
+| 输入特征      | 训练数据 | Dev | Test |
+| ----------------- | -------- | --- | ---- |
+| FBank [7]         | 178h     | 4.4 | 4.7  |
+| FBank [4]         | 1wh      | /   | 3.9  |
+| Wav2vec 2.0 BASE  | 178h     | 4.2 | 4.7  |
+| Wav2vec 2.0 LARGE | 178h     | 3.8 | 4.1  |
+| HuBERT Base       | 178h     | 4.1 | 4.3  |
+| HuBERT LARGE      | 178h     | 3.1 | 3.3  |
+
 ### WenetSpeech 实验结果
 
 实验遵循 ESPnet [6,7,8] 工具包默认配置，即将预训练模型作为特征提取器，对于输入语音提取预训练模型各隐层表征进行加权求和，得到的最终语音表征将替换传统 FBank 特征作为 Conformer ASR 模型的输入。解码方法为 Beamsearch，没有使用语言模型 rescoring。
