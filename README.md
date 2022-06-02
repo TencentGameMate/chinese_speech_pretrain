@@ -42,12 +42,7 @@
 | HuBERT LARGE      | 100h     | 10.0   | 10.2        | 14.5            |
 
 
-
-
-
-
-
-更多语音下游任务实验结果请关注 GitHub 链接（https://github.com/TencentGameMate/chinese_speech_pretrain）。欢迎大家使用我们提供的中文语音预训练模型开展研究工作，一起探索语音预训练模型在中文和相关众多场景下的应用。
+欢迎大家使用我们提供的中文语音预训练模型开展研究工作，一起探索语音预训练模型在中文和相关众多场景下的应用。
 
 <p align="center">
     <br>
