@@ -145,11 +145,11 @@ input_values = input_values.to(device)
 
 with torch.no_grad():
     outputs = model(input_values)
-    last_hidden_states = outputs.last_hidden_states
+    last_hidden_state = outputs.last_hidden_state
 
     # for Wav2Vec2ForPreTraining
     # outputs = model(input_values, mask_time_indices=mask_time_indices, output_hidden_states=True)
-    # last_hidden_states = outputs.hidden_states[-1]
+    # last_hidden_state = outputs.hidden_states[-1]
 
 ```
 
