@@ -3,8 +3,11 @@
 我们使用 WenetSpeech [1] train_l 集的 1 万小时中文数据作为无监督预训练数据。数据主要来源于 YouTube 和 Podcast，覆盖了各种类型录制场景、背景噪声、说话方式等，其领域主要包括有声书、解说、纪录片、电视剧、访谈、新闻、朗读、演讲、综艺和其他等10大场景。我们基于 Fairseq 工具包 [2] 分别训练了 wav2vec 2.0 [3] 和 HuBERT [4] 模型，遵循 [3,4] 中模型配置，每个预训练模型模型包括 BASE 和 LARGE 两种大小。对于 BASE 模型，我们使用 8 张 A100 显卡，梯度累计为 8，模拟 64 张显卡进行训练。对于 LARGE 模型，我们使用 16 张 A100 显卡，梯度累计为 8，模拟 128 张显卡进行训练。
 
 ### 模型下载
+为了方便下载，在huggingface模型库里有fairseq模型，如[chinese-wav2vec2-base](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base) 里的chinese-wav2vec2-base-fairseq-ckpt.pt
 
-| 模型                   | 预训练数据          | fairseq模型下载                                                                    | huggingface模型下载 |
+(We also provide fairseq checkpoint in huggingface model link, e.g chinese-wav2vec2-base-fairseq-ckpt.pt in [chinese-wav2vec2-base](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base) )
+
+| 模型                   | 预训练数据          | fairseq模型下载(百度盘)                                                                    | huggingface & fairseq模型下载 |
 | ---------------------- | ------------------- | ---------------------------------------------------------------------------------- | ------------------- |
 | chinese-wav2vec2-base  | WenetSpeech train L | [chinese-wav2vec2-base](https://pan.baidu.com/s/1TwlSNDmihs_mjjPpNLhzoA) 提取码: d2hq |  [chinese-wav2vec2-base](https://huggingface.co/TencentGameMate/chinese-wav2vec2-base)  |
 | chinese-wav2vec2-large | WenetSpeech train L | [chinese-wav2vec2-large](https://pan.baidu.com/s/1WbAv3PUqRWmHwwp6GsmLnw) 提取码: 7p8r | [chinese-wav2vec2-large](https://huggingface.co/TencentGameMate/chinese-wav2vec2-large)  |
