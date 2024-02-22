@@ -1,12 +1,5 @@
 # chinese_speech_pretrain
 
-### 使用了我们模型的项目
-感谢对我们模型的认可
-
-| 项目 | 项目地址 |
-| --- | --- |
-|GPT-SoVITS | [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) |
-
 ### 简介
 我们使用 WenetSpeech [1] train_l 集的 1 万小时中文数据作为无监督预训练数据。数据主要来源于 YouTube 和 Podcast，覆盖了各种类型录制场景、背景噪声、说话方式等，其领域主要包括有声书、解说、纪录片、电视剧、访谈、新闻、朗读、演讲、综艺和其他等10大场景。我们基于 Fairseq 工具包 [2] 分别训练了 wav2vec 2.0 [3] 和 HuBERT [4] 模型，遵循 [3,4] 中模型配置，每个预训练模型模型包括 BASE 和 LARGE 两种大小。对于 BASE 模型，我们使用 8 张 A100 显卡，梯度累计为 8，模拟 64 张显卡进行训练。对于 LARGE 模型，我们使用 16 张 A100 显卡，梯度累计为 8，模拟 128 张显卡进行训练。
 
@@ -179,6 +172,12 @@ with torch.no_grad():
 </p>
 
 
+### 使用了我们模型的项目
+以下项目使用了我们的模型
+
+| 项目 | 项目地址 |
+| --- | --- |
+|GPT-SoVITS | [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) |
 
 ## 参考文献
 
