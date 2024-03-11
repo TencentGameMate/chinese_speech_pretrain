@@ -179,6 +179,16 @@ with torch.no_grad():
 | --- | --- |
 |GPT-SoVITS | [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) |
 
+### 引用本项目
+```
+@misc{TencentGameMate,
+title={chinese_speech_pretrain},
+author = {Pengcheng Guo and Shixing Liu},
+year = {2022},
+url = {https://github.com/TencentGameMate/chinese_speech_pretrain},
+}
+```
+
 ## 参考文献
 
 [1] Binbin Zhang, Hang Lv, Pengcheng Guo, Qijie Shao, Chao Yang, Lei Xie, Xin Xu, Hui Bu, Xiaoyu Chen, Chenhen Zeng, Di Wu, and Zhendong Peng, "WenetSpeech: A 10000+ hours multi-domain Mandarin corpus for speech recognition," in Proc. ICASSP, 2021
