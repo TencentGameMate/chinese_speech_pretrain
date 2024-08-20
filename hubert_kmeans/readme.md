@@ -1,0 +1,3 @@
+hubert base的第一次迭代的k-means是mfcc，第二次迭代（开源模型）的k-means是hubert_base_iter1_32gpu_l6
+
+hubert large(开源模型)的的k-means是hubert_base_iter2_32gpu_l9
